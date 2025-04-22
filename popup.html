@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLDR Genie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">TLDR Genie</h2>
+        <div class="controls">
+            <select id="summary-type" class="dropdown">
+                <option value="brief">Brief Summary</option>
+                <option value="detailed">Detailed Analysis</option>
+                <option value="bullets">Bullet Points</option>
+                <option value="eli5">Explain Like I'm 5</option>
+            </select>
+            
+            <button id="summarize" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                Summarize This Page
+            </button>
+            <button id="copy-btn" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy Text
+            </button>
+        </div>
+
+        <pre id="result" class="result-box" contenteditable="true">Select a type and click Summarize...</pre>
+    </div>
+    <script src="popup.js"></script>
+
+</body>
+</html>
